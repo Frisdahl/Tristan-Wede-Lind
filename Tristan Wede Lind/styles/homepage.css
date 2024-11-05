@@ -1,0 +1,364 @@
+.new-release-ctn {
+  background-color: var(--brownColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.cta-btn {
+  background-color: var(--ctaColor);
+  color: white;
+  padding: 10px 25px 10px 25px;
+  width: clamp(150px, 200px, 300px);
+  max-width: 100%; /* Ensure it doesn’t cause overflow */
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+}
+
+.new-release-img {
+  border-radius: 10px;
+}
+
+.bio-paragraph {
+  > * {
+    margin-top: 15px;
+  }
+}
+
+.bio-quote {
+  background-color: var(--lightBlueColor);
+  color: white;
+  text-align: center;
+  margin: 15px 0px 15px 0px;
+  border-radius: 15px;
+
+  .reviewer-paragraph {
+    text-align: right;
+    margin-top: 15px;
+  }
+}
+
+.section-header {
+  background-color: var(--lightBlueColor);
+  color: var(--brownColor);
+}
+
+.tour-img-ctn {
+  height: 100%;
+  max-height: 350px;
+  max-width: 100px;
+}
+
+.microphone-img {
+  height: 1em;
+  width: 1em;
+  margin-right: 5px;
+}
+
+.microphone-date-ctn {
+  display: flex;
+  align-items: center;
+}
+.topic {
+  color: var(--mainBlueColor);
+  font-weight: 600;
+}
+
+.role {
+  color: var(--ctaColor);
+  font-weight: 600;
+}
+
+.tour-article {
+  border-bottom: 1px solid var(--brownColor);
+  padding: 15px 0px 15px 0px;
+}
+
+.book-article-main {
+  text-align: center;
+}
+
+.book-article {
+  padding-bottom: 15px;
+  margin-top: 25px;
+  border-bottom: 1px solid var(--brownColor);
+}
+
+.book-img-ctn {
+  height: 250px;
+}
+
+.book-img {
+  max-width: 50%;
+  margin: auto;
+}
+.book-title {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.heading-title {
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.heading-year-ctn-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-year-ctn {
+  display: flex;
+}
+
+.book-description {
+  margin-top: 15px;
+}
+
+.contact-section {
+  padding: 0px 15px 0px 15px;
+}
+
+.request-form {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact-form-img {
+  display: none;
+  height: 100%;
+}
+
+.contact-person-ctn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#contact-pers-1 {
+  border-bottom: 1px solid var(--brownColor);
+  padding: 15px;
+}
+
+.contact-img-ctn {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.contact-img {
+  border-radius: 50%;
+}
+
+.contact-role {
+  margin-top: 15px;
+}
+
+.contact-name {
+  margin-top: 25px;
+}
+
+.phone-ctn {
+  display: flex;
+}
+
+.contact-information {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  > * {
+    margin-top: 5px;
+  }
+}
+
+.form-field {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.input-ctn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  input {
+    padding: 5px;
+    border: 0.5px solid var(--ctaColor);
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+
+.form-btn {
+  padding: 10px 25px 10px 25px;
+  background-color: var(--ctaColor);
+  color: white;
+  border: none;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.up-arrow-ctn {
+  width: 10%;
+  max-width: 50px;
+  margin: 25px 25px 25px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .new-release-ctn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+
+    .text-btn-ctn {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .contact-person-ctn {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .contact-img-ctn {
+    margin: 0;
+  }
+  .book-article {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    flex-direction: column-reverse;
+
+    .book-img {
+      grid-column: 2;
+      grid-row: 1;
+      min-width: 100%;
+    }
+
+    .book-text {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  .book-text-main {
+    margin-top: 15px;
+  }
+
+  .contact-person-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .contact-information-ctn {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-section {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 15px;
+  }
+
+  .contact-person-ctn {
+    margin-top: 0;
+  }
+
+  .employees-ctn {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .contact-form-img {
+    display: block;
+    max-height: 650px;
+    grid-column: 2; /* Place it in the second column */
+    grid-row: 1 / span 2; /* Start from row 1 and span 2 rows downwards */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #contact-pers-1 {
+    border: 1px solid var(--brownColor);
+    border-radius: 15px;
+  }
+
+  .contact-form-img {
+    max-height: none;
+  }
+
+  .heading-year-ctn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .person-booking-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid var(--brownColor);
+    border-radius: 15px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: auto 30%;
+  }
+  .main-books {
+    display: block;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+  }
+
+  .book-title-main {
+    font-size: 1.25em;
+  }
+
+  .heading-title-main {
+    font-size: 0.65em;
+  }
+
+  .year-main {
+    font-size: 0.75;
+  }
+
+  .on-tour-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .tour-article {
+    border: 1px solid var(--brownColor);
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .book-article {
+    border: 1px solid var(--brownColor);
+    border-radius: 10px;
+    margin: 0;
+    padding: 15px;
+  }
+}
